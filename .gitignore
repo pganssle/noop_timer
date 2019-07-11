@@ -19,6 +19,9 @@ venv/
 noop_data.zip
 noop_timings.png
 
+
+# Other
+passfile.gpg
 .idea
 .cache
 .mypy_cache
