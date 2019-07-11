@@ -14,7 +14,7 @@ dist/.build_complete: VERSION
 	touch dist/.build_complete
 
 release_pypi: VERSION dist/.build_complete
-	env $$(gpg -d passfile.gpg 2>/dev/null) tox -e release -r pypi
+	env $$(gpg -d passfile.gpg 2>/dev/null) tox -e release -- -r pypi
 
 release_test: VERSION dist/.build_complete
 	env $$(gpg -d passfile.gpg 2>/dev/null) tox -e release
